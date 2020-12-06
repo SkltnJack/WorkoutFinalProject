@@ -11,13 +11,15 @@ import project.st991438136.alex.databinding.RunningFragmentBinding
 
 class RunningFragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
         val binding: RunningFragmentBinding =
             DataBindingUtil.inflate(inflater, R.layout.running_fragment, container, false)
 
 
-        return null
+        return binding.root
     }
 }

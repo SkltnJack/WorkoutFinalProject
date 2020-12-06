@@ -3,138 +3,139 @@
 <layout>
 
     <data>
+
         <variable
             name="running"
             type="project.st991438136.alex.fragment.RunningFragment" />
     </data>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textViewRun"
-        android:layout_width="180dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="sans-serif"
-        android:text="Running"
-        android:textAlignment="center"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textViewDate"
-        android:layout_width="139dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="176dp"
-        android:fontFamily="sans-serif"
-        android:text="Date: "
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textViewRun"
+            android:layout_width="180dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif"
+            android:text="Running"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewTime"
-        android:layout_width="143dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:fontFamily="sans-serif"
-        android:text="Duration: "
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="139dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="176dp"
+            android:fontFamily="sans-serif"
+            android:text="Date: "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewDistance"
-        android:layout_width="139dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:fontFamily="sans-serif"
-        android:text="Distance: "
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="143dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="sans-serif"
+            android:text="Duration: "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
 
-    <TextView
-        android:id="@+id/textViewReps"
-        android:layout_width="133dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
-        android:fontFamily="sans-serif"
-        android:text="Speed: "
-        android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDistance" />
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="139dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="sans-serif"
+            android:text="Distance: "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
 
-    <EditText
-        android:id="@+id/editDate"
-        android:layout_width="166dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="168dp"
-        android:layout_marginEnd="36dp"
-        android:ems="10"
-        android:hint="Date"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textViewReps"
+            android:layout_width="133dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="sans-serif"
+            android:text="Speed: "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDistance" />
 
-    <EditText
-        android:id="@+id/editDuration"
-        android:layout_width="166dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="36dp"
-        android:ems="10"
-        android:hint="Duration"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDate" />
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="168dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editDistance"
-        android:layout_width="166dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="36dp"
-        android:ems="10"
-        android:hint="Distance covered"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDuration" />
+        <EditText
+            android:id="@+id/editDuration"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="Duration"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDate" />
 
-    <EditText
-        android:id="@+id/editSpeed"
-        android:layout_width="166dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="36dp"
-        android:ems="10"
-        android:hint="Speed "
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDistance" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/editDistance"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="Distance covered"
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDuration" />
+
+        <EditText
+            android:id="@+id/editSpeed"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="Speed "
+            android:inputType="textPersonName"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDistance" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
