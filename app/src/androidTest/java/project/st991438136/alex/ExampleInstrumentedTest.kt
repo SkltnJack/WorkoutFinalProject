@@ -1,4 +1,4 @@
-package project.st991438136.Alex
+package project.st991438136.alex
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
