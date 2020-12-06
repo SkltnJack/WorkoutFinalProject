@@ -1,4 +1,4 @@
-package project.st991438136.AlexMayurRicha
+package project.st991438136.Alex
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
