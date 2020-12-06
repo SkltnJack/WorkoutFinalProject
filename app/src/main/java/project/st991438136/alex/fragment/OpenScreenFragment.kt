@@ -1,4 +1,4 @@
-package project.st991438136.alex.Fragment
+package project.st991438136.alex.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

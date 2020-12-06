@@ -3,7 +3,7 @@
     <data>
         <variable
             name="weight"
-            type="project.st991438136.alex.Fragment.FreeWeightFragment" />
+            type="project.st991438136.alex.fragment.FreeWeightFragment" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
