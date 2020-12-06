@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:760040346504:android:11c48c658f306ce7bee03d",
         "android_client_info": {
-          "package_name": "project.st991438136.AlexMayurRicha"
+          "package_name": "project.st991438136.alex"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "760040346504-4kc241t9gsmsuua307c7gmlo5fbp1qt9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "project.st991438136.AlexMayurRicha",
+            "package_name": "project.st991438136.alex",
             "certificate_hash": "b86e1a525a7679fd33c6602560fe6affd95348dd"
           }
         },
