@@ -9,5 +9,22 @@
         android:id="@+id/openScreenFragment"
         android:name="project.st991438136.alex.Fragment.OpenScreenFragment"
         android:label="OpenScreenFragment"
-        tools:layout="@layout/fragment_open_screen"/>
+        tools:layout="@layout/fragment_open_screen">
+        <action
+            android:id="@+id/action_openScreenFragment_to_freeWeightFragment"
+            app:destination="@id/freeWeightFragment" />
+        <action
+            android:id="@+id/action_openScreenFragment_to_runningFragment"
+            app:destination="@id/runningFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/freeWeightFragment"
+        android:name="project.st991438136.alex.Fragment.FreeWeightFragment"
+        android:label="FreeWeightFragment"
+        tools:layout="@layout/weight_fragment"/>
+    <fragment
+        android:id="@+id/runningFragment"
+        android:name="project.st991438136.alex.Fragment.RunningFragment"
+        android:label="RunningFragment"
+        tools:layout="@layout/running_fragment"/>
 </navigation>
