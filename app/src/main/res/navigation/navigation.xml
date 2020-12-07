@@ -21,10 +21,28 @@
         android:id="@+id/freeWeightFragment"
         android:name="project.st991438136.alex.fragment.FreeWeightFragment"
         android:label="FreeWeightFragment"
-        tools:layout="@layout/weight_fragment"/>
+        tools:layout="@layout/weight_fragment">
+        <action
+            android:id="@+id/action_freeWeightFragment_to_viewFreeWeightFragment"
+            app:destination="@id/viewFreeWeightFragment" />
+    </fragment>
     <fragment
         android:id="@+id/runningFragment"
         android:name="project.st991438136.alex.fragment.RunningFragment"
         android:label="RunningFragment"
-        tools:layout="@layout/running_fragment"/>
+        tools:layout="@layout/running_fragment">
+        <action
+            android:id="@+id/action_runningFragment_to_viewRunningFragment"
+            app:destination="@id/viewRunningFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFreeWeightFragment"
+        android:name="project.st991438136.alex.fragment.ViewFreeWeightFragment"
+        android:label="ViewFreeWeightFragment"
+        tools:layout="@layout/view_free_weight_workouts"/>
+    <fragment
+        android:id="@+id/viewRunningFragment"
+        android:name="project.st991438136.alex.fragment.ViewRunningFragment"
+        android:label="ViewRunningFragment"
+        tools:layout="@layout/view_running_workouts"/>
 </navigation>
