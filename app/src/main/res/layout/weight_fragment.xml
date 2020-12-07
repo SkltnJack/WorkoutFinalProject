@@ -172,7 +172,9 @@
             android:layout_height="59dp"
 
             android:layout_marginTop="32dp"
+            android:backgroundTint="#716F6F"
             android:text="Add Workout"
+            android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editReps" />
@@ -181,7 +183,9 @@
             android:id="@+id/btnViewPastWorkoutsFW"
             android:layout_width="270dp"
             android:layout_height="59dp"
+            android:backgroundTint="#716F6F"
             android:text="View Past Workouts"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
