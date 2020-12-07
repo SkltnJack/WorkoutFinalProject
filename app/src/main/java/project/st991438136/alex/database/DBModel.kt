@@ -2,6 +2,8 @@ package project.st991438136.alex.database
 
 import android.util.Log
 import com.google.firebase.database.*
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -25,11 +27,9 @@ object DBModel: Observable() {
     private var listRunning : ArrayList<Running>? = ArrayList()
 
     // link to each table
-    private fun dbRefModelWeights() : DatabaseReference? =
-        FirebaseDatabase.getInstance().reference.child(WEIGHTS)
+    private fun dbRefModelWeights() : DatabaseReference? = Firebase.database.reference.child(WEIGHTS)
 
-    private fun dbRefModelRunning() : DatabaseReference? =
-        FirebaseDatabase.getInstance().reference.child(RUNNING)
+    private fun dbRefModelRunning() : DatabaseReference? = Firebase.database.reference.child(WEIGHTS)
 
     // set eventlisteners to null
     private fun setAllNulls() {
