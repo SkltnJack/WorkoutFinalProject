@@ -7,26 +7,42 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="482dp"
+            android:layout_height="848dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/workout" />
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="416dp"
+            android:layout_height="72dp"
+            android:fontFamily="@font/advent_pro_semibold"
             android:text="Choose The Workout You Completed."
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-            android:textSize="20sp"
+            android:textColor="#FBE2E2"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/btnRunning"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.806" />
+            app:layout_constraintVertical_bias="0.42" />
 
         <Button
             android:id="@+id/btnFreeWeights"
             android:layout_width="270dp"
             android:layout_height="59dp"
+            android:backgroundTint="#716F6F"
             android:text="Free Weights"
+            android:textColor="#FBE2E2"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
@@ -36,9 +52,13 @@
 
         <Button
             android:id="@+id/btnRunning"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="267dp"
             android:layout_height="60dp"
+            android:backgroundTint="#716F6F"
             android:text="Running"
+            android:textColor="#FBE2E2"
+            android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/btnFreeWeights"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
