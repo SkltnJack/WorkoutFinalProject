@@ -45,8 +45,8 @@
             android:id="@+id/textViewDate"
             android:layout_width="139dp"
             android:layout_height="41dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="176dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="44dp"
             android:fontFamily="@font/advent_pro_semibold"
             android:text="Date: "
             android:textAlignment="center"
@@ -54,7 +54,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewRun" />
 
         <TextView
             android:id="@+id/textViewTime"
@@ -105,7 +105,7 @@
             android:id="@+id/editDate"
             android:layout_width="166dp"
             android:layout_height="49dp"
-            android:layout_marginTop="168dp"
+            android:layout_marginTop="44dp"
             android:layout_marginEnd="36dp"
             android:alpha="1"
             android:ems="10"
@@ -117,7 +117,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textViewRun" />
 
         <EditText
             android:id="@+id/editDuration"
@@ -182,8 +182,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.747" />
+            app:layout_constraintTop_toBottomOf="@+id/editSpeed"
+            app:layout_constraintVertical_bias="0.139" />
 
         <Button
             android:id="@+id/btnViewPastWorkouts"
@@ -194,8 +194,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.886" />
+            app:layout_constraintTop_toBottomOf="@+id/btnAddWorkout"
+            app:layout_constraintVertical_bias="0.293" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
