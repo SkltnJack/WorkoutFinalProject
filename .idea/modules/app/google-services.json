@@ -1,23 +1,24 @@
 {
   "project_info": {
     "project_number": "760040346504",
+    "firebase_url": "https://workoutfinalproject-default-rtdb.firebaseio.com",
     "project_id": "workoutfinalproject",
     "storage_bucket": "workoutfinalproject.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:760040346504:android:11c48c658f306ce7bee03d",
+        "mobilesdk_app_id": "1:760040346504:android:64f0a6579ca7be35bee03d",
         "android_client_info": {
-          "package_name": "project.st991438136.AlexMayurRicha"
+          "package_name": "project.st991438136.alex"
         }
       },
       "oauth_client": [
         {
-          "client_id": "760040346504-4kc241t9gsmsuua307c7gmlo5fbp1qt9.apps.googleusercontent.com",
+          "client_id": "760040346504-k974kujmmhjkk9n2oebv5cunaf4i57bv.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "project.st991438136.AlexMayurRicha",
+            "package_name": "project.st991438136.alex",
             "certificate_hash": "b86e1a525a7679fd33c6602560fe6affd95348dd"
           }
         },

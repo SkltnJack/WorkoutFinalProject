@@ -15,8 +15,8 @@ object DBModel: Observable() {
      * RUNNING : link to running table in firebase
      */
     private const val TAG = "WorkoutData"
-    private const val WEIGHTS = "https://workoutfinalproject-default-rtdb.firebaseio.com/weights"
-    private const val RUNNING = "https://workoutfinalproject-default-rtdb.firebaseio.com/running"
+    private const val WEIGHTS = "weights"
+    private const val RUNNING = "running"
 
     // create event listeners
     private var eventListener_weights : ValueEventListener? = null
@@ -29,7 +29,7 @@ object DBModel: Observable() {
     // link to each table
     private fun dbRefModelWeights() : DatabaseReference? = Firebase.database.reference.child(WEIGHTS)
 
-    private fun dbRefModelRunning() : DatabaseReference? = Firebase.database.reference.child(WEIGHTS)
+    private fun dbRefModelRunning() : DatabaseReference? = Firebase.database.reference.child(RUNNING)
 
     // set eventlisteners to null
     private fun setAllNulls() {
@@ -67,8 +67,8 @@ object DBModel: Observable() {
 
     // getter methods
 
-    fun getRunningData() : ArrayList<Running>? = listRunning
-    fun getWeightsData() : ArrayList<Weights>? = listWeights
+    fun getRunningData() : ArrayList<Running> = listRunning!!
+    fun getWeightsData() : ArrayList<Weights> = listWeights!!
 
     // init
     init {

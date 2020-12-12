@@ -23,8 +23,14 @@ class FreeWeightFragment : Fragment() {
 
         binding.btnViewPastWorkoutsFW.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_freeWeightFragment_to_viewFreeWeightFragment)
+
+
         }
 
         return binding.root
     }
+
+
+
+
 }
