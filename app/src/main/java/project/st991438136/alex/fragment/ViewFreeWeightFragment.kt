@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import project.st991438136.alex.R
+import project.st991438136.alex.databinding.ViewFreeWeightWorkoutsBinding
 import project.st991438136.alex.databinding.WeightFragmentBinding
 
 class ViewFreeWeightFragment : Fragment(){
@@ -16,7 +17,7 @@ class ViewFreeWeightFragment : Fragment(){
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding: WeightFragmentBinding =
+        val binding: ViewFreeWeightWorkoutsBinding =
             DataBindingUtil.inflate(inflater, R.layout.view_free_weight_workouts, container, false)
 
 
