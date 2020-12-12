@@ -14,58 +14,21 @@ import kotlin.collections.ArrayList
 class MainActivity : AppCompatActivity(), Observer {
 
 
-    private lateinit var recyclerView1: RecyclerView
-    private lateinit var recyclerView2: RecyclerView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        DBModel.addObserver(this)
-
-//        recyclerView1 = findViewById(R.id.fwRecycleView)
-//        recyclerView2 = findViewById(R.id.runRecycleView)
-//
-//        val weightList:ArrayList<Weights> = DBModel.getWeightsData()
-//        val runList:ArrayList<Running> = DBModel.getRunningData()
-//
-//        val recyclerView_weigths = RecyclerViewAdapterFW(weightList)
-//        recyclerView1.adapter = recyclerView_weigths
-//
-//        val recyclerView_runs = RecyclerViewAdapterRun(runList)
-//        recyclerView2.adapter = recyclerView_runs
 
 
 
-
-    }
-
-    fun loadFreeWeightList(){
-
-        recyclerView1 = findViewById(R.id.fwRecycleView)
-
-
-        val weightList:ArrayList<Weights> = DBModel.getWeightsData()
-
-
-        val recyclerView_weigths = RecyclerViewAdapterFW(weightList)
-        recyclerView1.adapter = recyclerView_weigths
 
 
     }
 
     override fun update(p0: Observable?, p1: Any?) {
 
-        recyclerView1 = findViewById(R.id.fwRecycleView)
-        recyclerView2 = findViewById(R.id.runRecycleView)
 
-        val weightList:ArrayList<Weights> = DBModel.getWeightsData()
-        val runList:ArrayList<Running> = DBModel.getRunningData()
-
-        val recyclerView_weigths = RecyclerViewAdapterFW(weightList)
-        recyclerView1.adapter = recyclerView_weigths
-
-        val recyclerView_runs = RecyclerViewAdapterRun(runList)
-        recyclerView2.adapter = recyclerView_runs
 
 
 
