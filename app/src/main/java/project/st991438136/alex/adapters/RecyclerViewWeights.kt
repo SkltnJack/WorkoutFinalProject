@@ -52,8 +52,6 @@ class RecyclerViewWeights(
             bundle.putString("weight",currentFreeWeight.weightsUsed)
             bundle.putString("reps",currentFreeWeight.repsComplete)
 
-
-
             view?.findNavController()?.navigate(R.id.action_viewFreeWeightFragment_to_fragmentUpdateWeights,bundle)
 
 

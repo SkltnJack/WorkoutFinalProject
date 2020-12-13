@@ -14,7 +14,7 @@ import project.st991438136.alex.R
 import project.st991438136.alex.database.write.DataClassWeights
 import project.st991438136.alex.databinding.FragmentEditWeightsBinding
 
-class FragmentUpdateWeights: Fragment() {
+class FragmentUpdateRun : Fragment() {
 
     private lateinit var database: DatabaseReference
 

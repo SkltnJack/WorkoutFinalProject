@@ -42,7 +42,8 @@
         tools:layout="@layout/fragment_weights_view">
         <action
             android:id="@+id/action_viewFreeWeightFragment_to_fragmentUpdateWeights"
-            app:destination="@id/fragmentUpdateWeights" />
+            app:destination="@id/fragmentUpdateWeights"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/viewRunningFragment"
@@ -53,5 +54,11 @@
         android:id="@+id/fragmentUpdateWeights"
         android:name="project.st991438136.alex.fragment.update.FragmentUpdateWeights"
         android:label="FragmentUpdateWeights"
-        tools:layout="@layout/fragment_edit_weights"/>
+        tools:layout="@layout/fragment_edit_weights">
+        <action
+            android:id="@+id/action_fragmentUpdateWeights_to_viewFreeWeightFragment"
+            app:destination="@id/viewFreeWeightFragment"
+            app:popUpTo="@id/viewFreeWeightFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
