@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import project.st991438136.alex.R
 import project.st991438136.alex.adapters.RecyclerViewWeights
-import project.st991438136.alex.database.DBModel
+import project.st991438136.alex.database.read.DBModel
 import java.util.*
 
 class FragmentViewWeights : Fragment(), Observer{

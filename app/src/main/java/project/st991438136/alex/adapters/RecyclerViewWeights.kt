@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.card_weights.view.*
 import project.st991438136.alex.R
-import project.st991438136.alex.database.Weights
+import project.st991438136.alex.database.read.Weights
 
 class RecyclerViewWeights(
     private val list: ArrayList<Weights>

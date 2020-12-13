@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/weight" />
 
         <EditText
-            android:id="@+id/editDuration"
+            android:id="@+id/editWeightDuration"
             android:layout_width="166dp"
             android:layout_height="49dp"
             android:layout_marginTop="36dp"
@@ -40,10 +40,10 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editDate" />
+            app:layout_constraintTop_toBottomOf="@+id/editWeightDate" />
 
         <EditText
-            android:id="@+id/editDate"
+            android:id="@+id/editWeightDate"
             android:layout_width="166dp"
             android:layout_height="49dp"
             android:layout_marginTop="36dp"
@@ -72,7 +72,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editDuration" />
+            app:layout_constraintTop_toBottomOf="@+id/editWeightDuration" />
 
         <EditText
             android:id="@+id/editReps"

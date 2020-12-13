@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.card_runs.view.*
 import project.st991438136.alex.R
-import project.st991438136.alex.database.Running
+import project.st991438136.alex.database.read.Running
 
 class RecyclerViewRun(
     private val list: ArrayList<Running>
