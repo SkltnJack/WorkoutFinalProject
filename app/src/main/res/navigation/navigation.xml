@@ -39,10 +39,19 @@
         android:id="@+id/viewFreeWeightFragment"
         android:name="project.st991438136.alex.fragment.view.FragmentViewWeights"
         android:label="ViewFreeWeightFragment"
-        tools:layout="@layout/fragment_weights_view"/>
+        tools:layout="@layout/fragment_weights_view">
+        <action
+            android:id="@+id/action_viewFreeWeightFragment_to_fragmentUpdateWeights"
+            app:destination="@id/fragmentUpdateWeights" />
+    </fragment>
     <fragment
         android:id="@+id/viewRunningFragment"
         android:name="project.st991438136.alex.fragment.view.FragmentViewRuns"
         android:label="ViewRunningFragment"
         tools:layout="@layout/fragment_run_view"/>
+    <fragment
+        android:id="@+id/fragmentUpdateWeights"
+        android:name="project.st991438136.alex.fragment.update.FragmentUpdateWeights"
+        android:label="FragmentUpdateWeights"
+        tools:layout="@layout/fragment_edit_weights"/>
 </navigation>

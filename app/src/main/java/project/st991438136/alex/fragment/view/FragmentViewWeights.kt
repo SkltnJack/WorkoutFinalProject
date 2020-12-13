@@ -42,4 +42,10 @@ class FragmentViewWeights : Fragment(), Observer{
         val recyclerViewWeight = RecyclerViewWeights(weightList)
         recyclerView.adapter = recyclerViewWeight
     }
+
+    fun updateWeights(){
+
+    }
+
+
 }

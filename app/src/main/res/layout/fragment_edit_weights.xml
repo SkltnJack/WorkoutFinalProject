@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="updateWeight"
+            type="project.st991438136.alex.fragment.update.FragmentUpdateWeights" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="411dp"
+            android:layout_height="731dp"
+            android:layout_marginTop="4dp"
+            android:alpha="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/weight" />
+
+        <EditText
+            android:id="@+id/modifyWeightDuration"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:hint="Duration"
+            android:inputType="textPersonName"
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifyWeightDate" />
+
+        <EditText
+            android:id="@+id/modifyWeightDate"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWeight" />
+
+        <EditText
+            android:id="@+id/modifyWeight"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:hint="Weight Lifted"
+            android:inputType="textPersonName"
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifyWeightDuration" />
+
+        <EditText
+            android:id="@+id/modifyReps"
+            android:layout_width="166dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:hint="Reps"
+            android:inputType="textPersonName"
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifyWeight" />
+
+        <TextView
+            android:id="@+id/textViewWeight"
+            android:layout_width="339dp"
+            android:layout_height="51dp"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:text="Update Free Weights"
+            android:textAlignment="center"
+            android:textColor="#0E0D0D"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.074" />
+
+        <TextView
+            android:id="@+id/textViewReps"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:text="Reps: "
+            android:textAlignment="center"
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDistance" />
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:text="Weight Lifted: "
+            android:textAlignment="center"
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="126dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:text="Duration: "
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/advent_pro_semibold"
+            android:text="Date: "
+            android:textAlignment="center"
+            android:textColor="#0E0D0D"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWeight" />
+
+        <Button
+            android:id="@+id/btnUpdateWeights"
+            android:layout_width="270dp"
+            android:layout_height="59dp"
+
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#716F6F"
+            android:text="Update Workout"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modifyReps" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
