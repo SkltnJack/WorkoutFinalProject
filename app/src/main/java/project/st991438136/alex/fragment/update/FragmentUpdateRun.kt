@@ -11,7 +11,9 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import project.st991438136.alex.R
+import project.st991438136.alex.database.write.DataClassRun
 import project.st991438136.alex.database.write.DataClassWeights
+import project.st991438136.alex.databinding.FragmentEditRunningBinding
 import project.st991438136.alex.databinding.FragmentEditWeightsBinding
 
 class FragmentUpdateRun : Fragment() {
@@ -24,34 +26,34 @@ class FragmentUpdateRun : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        database = Firebase.database.reference.child("weights")
+        database = Firebase.database.reference.child("running")
 
-        val binding : FragmentEditWeightsBinding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_edit_weights, container, false)
+        val binding : FragmentEditRunningBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_edit_running, container, false)
 
 
-        binding.modifyWeightDate.setText(arguments?.getString("date"))
+        binding.modifyRunDate.setText(arguments?.getString("date"))
 
-        binding.modifyWeightDuration.setText(arguments?.getString("duration"))
-        binding.modifyWeight.setText(arguments?.getString("weight"))
-        binding.modifyReps.setText(arguments?.getString("reps"))
+        binding.modifyRunDuration.setText(arguments?.getString("duration"))
+        binding.modifyDistance.setText(arguments?.getString("distance"))
+        binding.modifySpeed.setText(arguments?.getString("speed"))
 
-        val dateBeforeUpdate = binding.modifyWeightDate.text.toString()
+        val dateBeforeUpdate = binding.modifyRunDate.text.toString()
 
-        binding.btnUpdateWeights.setOnClickListener {
+        binding.btnUpdateRun.setOnClickListener {
 
             // database.child gets the child (the date)
-            val date = binding.modifyWeightDate.text.toString()
-            val duration = binding.modifyWeightDuration.text.toString()
-            val weightLifted = binding.modifyWeight.text.toString()
-            val reps = binding.modifyReps.text.toString()
+            val date = binding.modifyRunDate.text.toString()
+            val duration = binding.modifyRunDuration.text.toString()
+            val distance = binding.modifyDistance.text.toString()
+            val speed = binding.modifySpeed.text.toString()
 
-            val updatedActivity = DataClassWeights(duration, reps, weightLifted)
+            val updatedActivity = DataClassRun(speed, distance, duration)
 
             database.child(dateBeforeUpdate).removeValue()
             database.child(date).setValue(updatedActivity)
 
-            it.findNavController().navigate(R.id.action_fragmentUpdateWeights_to_viewFreeWeightFragment)
+            it.findNavController().navigate(R.id.action_fragmentUpdateRun_to_viewRunningFragment)
 
 
         }

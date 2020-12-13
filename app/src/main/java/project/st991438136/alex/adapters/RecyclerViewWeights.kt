@@ -9,6 +9,9 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.card_weights.view.*
 import project.st991438136.alex.R
 import project.st991438136.alex.database.read.Weights
@@ -18,6 +21,8 @@ class RecyclerViewWeights(
     private val list: ArrayList<Weights>
 ) : RecyclerView.Adapter<RecyclerViewWeights.RecyclerViewHolder>() {
 
+    private lateinit var database: DatabaseReference
+
     class RecyclerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val date: TextView = itemView.datefw
@@ -25,6 +30,7 @@ class RecyclerViewWeights(
         val weightUsed: TextView = itemView.weightUsed
         val reps: TextView = itemView.reps
         val edit: Button = itemView.btnEditFW
+        val delete: Button = itemView.btnDeleteFW
 
 
     }
@@ -32,6 +38,8 @@ class RecyclerViewWeights(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.card_weights, parent,false)
+
+        database = Firebase.database.reference.child("weights")
 
         return RecyclerViewHolder(itemView)
     }
@@ -56,6 +64,10 @@ class RecyclerViewWeights(
 
 
 
+        }
+
+        holder.delete.setOnClickListener { view:View? ->
+            database.child(currentFreeWeight.date).removeValue()
         }
     }
 

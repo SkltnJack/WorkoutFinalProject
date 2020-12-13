@@ -43,9 +43,6 @@ class FragmentViewWeights : Fragment(), Observer{
         recyclerView.adapter = recyclerViewWeight
     }
 
-    fun updateWeights(){
-
-    }
 
 
 }

@@ -49,7 +49,11 @@
         android:id="@+id/viewRunningFragment"
         android:name="project.st991438136.alex.fragment.view.FragmentViewRuns"
         android:label="ViewRunningFragment"
-        tools:layout="@layout/fragment_run_view"/>
+        tools:layout="@layout/fragment_run_view">
+        <action
+            android:id="@+id/action_viewRunningFragment_to_fragmentUpdateRun"
+            app:destination="@id/fragmentUpdateRun" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentUpdateWeights"
         android:name="project.st991438136.alex.fragment.update.FragmentUpdateWeights"
@@ -59,6 +63,17 @@
             android:id="@+id/action_fragmentUpdateWeights_to_viewFreeWeightFragment"
             app:destination="@id/viewFreeWeightFragment"
             app:popUpTo="@id/viewFreeWeightFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUpdateRun"
+        android:name="project.st991438136.alex.fragment.update.FragmentUpdateRun"
+        android:label="FragmentUpdateRun"
+        tools:layout="@layout/fragment_edit_running">
+        <action
+            android:id="@+id/action_fragmentUpdateRun_to_viewRunningFragment"
+            app:destination="@id/viewRunningFragment"
+            app:popUpTo="@id/viewRunningFragment"
             app:popUpToInclusive="true" />
     </fragment>
 </navigation>
