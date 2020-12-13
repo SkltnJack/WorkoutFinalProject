@@ -39,10 +39,23 @@ class FragmentWeights : Fragment() {
             val duration = binding.editWeightDuration.text.toString()
             val weightLifted = binding.editWeight.text.toString()
             val reps = binding.editReps.text.toString()
-            val newActivity = DataClassWeights(duration, reps, weightLifted)
-            database.child(date).setValue(newActivity)
 
-            Toast.makeText(activity, "Activity has been added", Toast.LENGTH_SHORT).show()
+            if (date == "" || duration == "" || weightLifted == "" || reps == "") {
+                Toast.makeText(activity, "Please enter all data", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                val newActivity = DataClassWeights(duration, reps, weightLifted)
+
+                database.child(date).setValue(newActivity)
+
+                Toast.makeText(activity, "Activity has been added", Toast.LENGTH_SHORT).show()
+
+                binding.editWeightDate.text.clear()
+                binding.editWeightDuration.text.clear()
+                binding.editWeight.text.clear()
+                binding.editReps.text.clear()
+
+            }
         }
 
         return binding.root

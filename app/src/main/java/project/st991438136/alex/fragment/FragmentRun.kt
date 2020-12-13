@@ -35,11 +35,20 @@ class FragmentRun : Fragment() {
             val speed = binding.editSpeed.text.toString()
             val distance = binding.editDistance.text.toString()
 
-            val newActivity = DataClassRun(speed,distance,duration)
-            database.child(date).setValue(newActivity)
+            if (date == "" || duration == "" || speed == "" || distance == "") {
+                Toast.makeText(activity, "Please enter all data", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                val newActivity = DataClassRun(speed, distance, duration)
 
-            Toast.makeText(activity, "Activity has been added", Toast.LENGTH_SHORT).show()
+                database.child(date).setValue(newActivity)
+                Toast.makeText(activity, "Activity has been added", Toast.LENGTH_SHORT).show()
 
+                binding.editRunDate.text.clear()
+                binding.editRunDuration.text.clear()
+                binding.editSpeed.text.clear()
+                binding.editDistance.text.clear()
+            }
         }
 
         binding.btnViewPastWorkouts.setOnClickListener { view: View ->
