@@ -7,7 +7,7 @@
 
         <variable
             name="weight"
-            type="project.st991438136.alex.fragment.FreeWeightFragment" />
+            type="project.st991438136.alex.fragment.FragmentWeights" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -9,9 +9,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import project.st991438136.alex.R
-import project.st991438136.alex.databinding.FragmentOpenScreenBinding
+import project.st991438136.alex.databinding.FragmentMainBinding
 
-class OpenScreenFragment : Fragment() {
+class FragmentMain : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,8 +19,8 @@ class OpenScreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding: FragmentOpenScreenBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_open_screen, container, false)
+        val binding: FragmentMainBinding = DataBindingUtil.inflate(
+            inflater, R.layout.fragment_main, container, false)
 
         //adding binding for the buttons onClick Event
         binding.btnFreeWeights.setOnClickListener { view: View ->

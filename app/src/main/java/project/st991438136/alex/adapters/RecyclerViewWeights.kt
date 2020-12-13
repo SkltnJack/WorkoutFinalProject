@@ -5,13 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.card_view_fw.view.*
+import kotlinx.android.synthetic.main.card_weights.view.*
 import project.st991438136.alex.R
 import project.st991438136.alex.database.Weights
 
-class RecyclerViewAdapterFW(
+class RecyclerViewWeights(
     private val list: ArrayList<Weights>
-) : RecyclerView.Adapter<RecyclerViewAdapterFW.RecyclerViewHolder>() {
+) : RecyclerView.Adapter<RecyclerViewWeights.RecyclerViewHolder>() {
 
     class RecyclerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -25,7 +25,7 @@ class RecyclerViewAdapterFW(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.card_view_fw, parent,false)
+            .inflate(R.layout.card_weights, parent,false)
 
         return RecyclerViewHolder(itemView)
     }

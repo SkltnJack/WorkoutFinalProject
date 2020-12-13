@@ -8,17 +8,17 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import project.st991438136.alex.R
-import project.st991438136.alex.databinding.RunningFragmentBinding
+import project.st991438136.alex.databinding.FragmentRunBinding
 
-class RunningFragment : Fragment() {
+class FragmentRun : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding: RunningFragmentBinding =
-            DataBindingUtil.inflate(inflater, R.layout.running_fragment, container, false)
+        val binding: FragmentRunBinding =
+            DataBindingUtil.inflate(inflater, R.layout.fragment_run, container, false)
 
 
 

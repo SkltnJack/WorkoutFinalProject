@@ -8,9 +8,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import project.st991438136.alex.R
-import project.st991438136.alex.databinding.WeightFragmentBinding
+import project.st991438136.alex.databinding.FragmentWeightsBinding
 
-class FreeWeightFragment : Fragment() {
+class FragmentWeights : Fragment() {
 
 
     override fun onCreateView(
@@ -19,7 +19,7 @@ class FreeWeightFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        var binding : WeightFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.weight_fragment, container, false)
+        var binding : FragmentWeightsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_weights, container, false)
 
         binding.btnViewPastWorkoutsFW.setOnClickListener { view : View ->
 
